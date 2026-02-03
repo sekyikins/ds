@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.card {
+    background: white;
+    width: 380px;
+    padding: 30px 25px;
+    border-radius:20px ;
+    text-align: center;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.15);
+    animation: float 3s ease-in-out infinite;
+}
+
+
+.card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 15px 0;
+    object-fit: cover;
+    border: 5px solid #6ba6ff;
+}
+.enjoy {
+    font-weight:  bold;
+    margin-bottom: 20px;
+}
+button {
+    background: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+button:hover {
+    background: #e63946;
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(-8px); }
+
+}
+
+.bounce {
+    animation: bounce 1.5s infinite;
+}
+
+.fade-in {
+    animation: fade 2s;
+}
+@keyframes fade {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+.animation ::before {
+    content: "🥳🎂🎈🎁";
+    position: absolute;
+    font-size: 30px;
+    animation: fall 5s linear infinite;
+}
+@keyframes fall {
+    from { top:-50px}
+    to { top: 100%; }
+}
+.chop-btn{
+    background: linear-gradient(135deg, #ff4b5c, #ff6b6b);
+    color:  white;
+    border: none;
+    padding: 14px ;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(255, 75, 75, 0.4);
+    transform: scale(0.95);
+    
+}
